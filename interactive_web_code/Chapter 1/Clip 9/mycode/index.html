@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AirBnBCloneCoding.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imgs/comp_0685990 (1).png" alt="airbnb">
+        <div id="little-search">
+            <button class="little-search_button bold">어디든지</button><span class="divider"></span>
+            <button class="little-search_button bold">언제든 일주일</button><span class="divider"></span>
+            <button class="little-search_button">게스트 추가</button>
+            <div id="magnifying-glass-wrapper">
+                <img id="magnifying-glass-icon" src="../imgs/Magnifying_glass_icon.svg" alt="">
+            </div>
+        </div>
+        <div id="header-right-section"> 
+            <div id="do-airbnb">내가만든캠퍼스</div>
+            <div id=" ">
+                <img width="24 px" src="../imgs/list.svg" alt="last icon">
+                <img width="32px" src="../imgs/user-circle.svg" alt="user circle">
+            </div>
+        </div>
+    </header>
+    <div id="category-bar">
+        <button class="category-item" id="active-category">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+        <button class="category-item">
+            <img src="../imgs/airplane.svg" class="unactive-img" alt="airplane">
+            <img src="../imgs/airplane_black.svg" class="active-img" alt="airplane">
+            <div>해외</div>
+        </button>
+    </div>
+    <div id="grid">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+
+<script>
+    document.querySelectorAll(".category-item").forEach(button =>{
+        button.addEventListener("click",event =>{
+            document.querySelector("#active-category").removeAttribute('id')
+            button.setAttribute("id","active-category")
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,147 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-shadow: rgb(0 0 0 / 8%) 0 1px 0;
+    height: 80px;
+    align-items: center;
+}
+
+button{
+    background-color: transparent;/*배경색 없음*/
+    border: none;
+}
+
+#logo{
+    cursor: pointer;
+    height: 48px;
+}
+
+#little-search{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DDDDDD;
+    border-radius: 40px;
+    padding: 0 8px;
+}
+
+.little-search_button{
+display: flex;
+align-items: center;
+padding : 0 16px;
+white-space: nowrap;/*줄넘김 안됨*/
+height: 48px;
+}
+.little-search_button.bold{
+    font-weight: bold;
+}
+#magnifying-glass-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #ff385c;
+    border-radius: 50%;
+} 
+
+#magnifying-glass-icon{
+    width: 12px;
+}
+
+.divider{
+    flex-basis: 1px;
+    background-color: #DDDDDD;
+    height: 24px;
+}
+
+#do-airbnb{
+    font-weight: bold;
+}
+#do-airbnb:hover{
+    background-color:  #f7f7f7;
+}
+#header-right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-section{
+    display: flex;
+    gap: 10px;
+    padding: 5px 5px 5px 12px;
+    border: solid 1px #DDDDDD;
+    border-radius: 21px;
+    margin-left: 16px;
+}
+
+#category-bar{
+    overflow: auto;
+    display: flex;
+    gap : 32px;
+    padding : 0 40px;
+    padding-top: 10px;
+}
+
+#category-bar::-webkit-scrollbar{
+    display: none;
+}
+
+.category-item{
+    font-size: 12px;
+    font-weight: 600;
+    color : #717171;
+    cursor: pointer;
+}
+
+.active-img{
+    display: none;
+}
+
+.category-item:hover{
+    color: black;
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.category-item .active-img{
+    display: none;
+}
+.category-item:hover .active-img{
+    display: inline-block;
+}
+
+.category-item:hover .unactive-img{
+    display: none;
+}
+.category-item img{
+    width: 28px;
+}
+
+#active-category{
+    color: black;
+    border-bottom: 2px solid #DDDDDD;
+}
+#active-category .active-img{
+    display: inline-block;
+}
+#active-category .unactive-img{
+    display: none;
+}
+
+#grid{
+    display: grid;
+    grid-template-rows: 30PX 50px;
+    grid-template-columns: 50px 30px;
+    gap : 0 10px;
+}
+#grid div{
+    background-color: aqua;
+}
+
+#grid div:first-child{
+    background-color: yellowgreen;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
