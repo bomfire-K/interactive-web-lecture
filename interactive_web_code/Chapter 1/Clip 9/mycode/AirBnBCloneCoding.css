@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0 16px;
+    padding: 0 60px;
     box-shadow: rgb(0 0 0 / 8%) 0 1px 0;
     height: 80px;
     align-items: center;
@@ -81,7 +81,7 @@ height: 48px;
     overflow: auto;
     display: flex;
     gap : 32px;
-    padding : 0 40px;
+    padding : 0 60px;
     padding-top: 10px;
 }
 
@@ -144,4 +144,79 @@ height: 48px;
     background-color: yellowgreen;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.place-img-wrapper{
+    width: 308px;
+    height: 293px;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+}
+
+.place-img-wrapper .palce-img{
+    width: 308px;
+    height: 293px;
+    object-fit: cover;
+}
+
+.place-img-wrapper .heart-icon{
+    width: 24px;
+    top:16px;
+    right: 16px;
+    position:absolute;
+    cursor: pointer;
+}
+
+.heart-icon:active{
+    transform: scale(0.5);
+    transition: transform 0.25s ease;
+}
+
+.discription-section{
+    display: flex;
+    flex-direction: column;
+    gap : 2px;
+    margin-top: 14px;
+}
+
+.discription-section .title{
+    font-size : 15px;
+    font-weight: 600;
+    color : #343434
+}
+
+main{
+    padding : 20px 60px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+#main-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 308px);
+    gap : 20px;
+}
+
+#floating-map-button{
+    display: flex;
+    align-items: center;
+    padding : 14px 19px;
+    background-color: #222222;
+    position: fixed;
+    border-radius: 24px;
+    bottom :125px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    gap : 8px;
+}
+
+#floating-map-button:hover{
+    box-shadow: 0 0 0 1px transparent, 0 0 0 4px transparent;
+    transform: translateX(-50%) scale(1.04);
 }

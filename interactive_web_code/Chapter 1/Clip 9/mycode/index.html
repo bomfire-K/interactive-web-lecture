@@ -97,20 +97,110 @@
             <div>해외</div>
         </button>
     </div>
-    <div id="grid">
-        <div>A</div>
-        <div>B</div>
-        <div>C</div>
-        <div>D</div>
-    </div>
-</body>
-
-<script>
-    document.querySelectorAll(".category-item").forEach(button =>{
-        button.addEventListener("click",event =>{
-            document.querySelector("#active-category").removeAttribute('id')
-            button.setAttribute("id","active-category")
-        })
-    })
-</script>
+    <main>
+        <div id="main-grid">
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+            <div id="place-list-item">
+                <div class="place-img-wrapper">
+                    <img src="https://picsum.photos/500/500" class="palce-img" alt="place itme">
+                    <img src="../imgs/heart.svg" class="heart-icon" alt="">
+                </div>
+                <div class="discription-section">
+                    <div class="title">lorem ipsum</div>
+                    <div class="">lorem ipsum2</div>
+                    <div>lorem ipsum3</div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <button id="floating-map-button">
+            <span>지도 표시하기</span>
+            <img width="16px" src="../imgs/map-trifold.svg" alt="map icon">
+        </button>
+        </body>
+        
+        <script>
+            document.querySelectorAll(".category-item").forEach(button => {
+                button.addEventListener("click", event => {
+                    document.querySelector("#active-category").removeAttribute('id')
+                    button.setAttribute("id", "active-category")
+                })
+            })
+        </script>
 </html>
