@@ -1,0 +1,136 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;/*스크롤제거*/
+    background-color: #24145E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotation {
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes shrinkAndGrow{
+    0%{
+        transform: scale(0);/*0만큼 작아져라*/
+    }
+    25%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes expandHorizontal {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes appendFormBottom {
+    from{
+        transform: translateY(1000px);
+    }to{
+        transform:  translateY(0);
+    }
+}
+
+@keyframes shakingUpandDown {
+    from{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}
+
+#star_7, #star_8, #star_9, #star_10{
+    animation: shrinkAndGrow 10s infinite;
+    transform-box: fill-box ;/*박스속성을 변경*/
+    transform-origin: center;/*변형의 중심을 센터로*/
+}
+#star_1, #star_2, #star_6{
+    animation: shrinkAndGrow 4s infinite;
+    transform-box: fill-box ;/*박스속성을 변경*/
+    transform-origin: center;/*변형의 중심을 센터로*/
+}
+
+#star_3, #star_4, #star_5{
+    animation: shrinkAndGrow 7s infinite;
+    transform-box: fill-box ;/*박스속성을 변경*/
+    transform-origin: center;/*변형의 중심을 센터로*/
+}
+
+#planet_1{
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box ;/*박스속성을 변경*/
+    transform-origin: center;/*변형의 중심을 센터로*/
+    animation-timing-function: linear;
+}
+#planet_2{
+    animation-name: rotation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box ;/*박스속성을 변경*/
+    transform-origin: center;/*변형의 중심을 센터로*/
+}
+#UFO-beam {
+    animation: expandHorizontal 3.5s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+#number-0{
+    animation: appendFormBottom 3s ;
+    animation-timing-function: cubic-bezier(.15,1.65,.86,-0.39)
+}
+
+#alien_hand-R, #alien_hand-L{
+    animation: shakingUpandDown 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes soaking {
+    to{
+        transform: translateY(-250px) scale(0);
+    }
+}
+
+@keyframes shrinkHorizontal {
+    to{
+        transform: scaleX(0);
+    }
+}
+#number-0-soaking{
+    animation: soaking 2s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+#UFO-beam-disappearing{
+    animation: shrinkHorizontal 3s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
