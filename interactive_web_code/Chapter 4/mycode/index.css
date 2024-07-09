@@ -120,3 +120,104 @@ body{
 .list-item#on::before {
     background-image: url('./icons/light_house.png');
 }
+
+#panel1-img {
+    overflow: hidden;
+    padding-top: 50px;
+    margin-bottom: 500px;
+    position: relative;
+    height: 390px;
+}
+
+#flying-santa-img {
+    position: absolute;
+    right: -80px;
+    height: 310px;
+    transform: translate(80px, -13px) rotate(-23deg);
+}
+
+#video{
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#fixed-wrapper{
+    margin-bottom: 500px;
+}
+
+#fixed-description {
+    width: 622px;
+    margin: 30px auto 0;
+    color: white;
+    text-align: right;
+    line-height: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+#bank-beyond-wrapper{
+    height: 380px;
+}
+
+#bank-beyond {
+    display: flex;
+    justify-content: center;
+}
+
+#white-wrapper{
+    padding-top: 80px;
+    position: relative;
+    background-color: #f7f7f7;
+    height: 500px;
+    z-index: 1000;
+}
+
+#slider-container{
+    position: relative;
+    margin: 0 auto;
+    width: 380px;
+    scroll-snap-type: x mandatory;
+}
+
+#slider-content-wrapper::-webkit-scrollbar{
+    width: 0;
+}
+
+#slider-content-wrapper{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+#slider-content{
+    display: flex;
+}
+
+.slider-image{
+    width: 380px;
+    height: 400px;
+    scroll-snap-align: center;
+}
+
+.slider-button{
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#left-button{
+    left: 10px;
+}
+
+#right-button{
+    right : 10px;
+}
+
+#slider-index{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
